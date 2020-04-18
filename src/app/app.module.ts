@@ -8,6 +8,7 @@ import { HelloComponent } from './hello.component';
 import { AppRouterModule } from './router/router.module';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { HomeComponent } from './home/home.component';
+import { AddComponent } from './transactions/add/add.component';
 
 
 
@@ -18,7 +19,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     AppRouterModule
   ],
-  declarations: [ AppComponent, HelloComponent, TransactionsComponent, HomeComponent ],
+  declarations: [ AppComponent, HelloComponent, TransactionsComponent, HomeComponent, AddComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
