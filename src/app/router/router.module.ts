@@ -5,6 +5,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from "../app.component";
 import { TransactionsComponent } from "../transactions/transactions.component";
 import { HomeComponent } from "../home/home.component";
+import { AddComponent } from '../transactions/add/add.component';
 
 const appRoutes: Routes = [
   {
@@ -14,7 +15,13 @@ const appRoutes: Routes = [
   {
     path: "trans",
     component: TransactionsComponent,
-    data: { title: "Transactions" }
+    data: { title: "Transactions" },
+    children: [
+      {
+        path: "add",
+        component: AddComponent
+      }
+    ]
   }
 ];
 
