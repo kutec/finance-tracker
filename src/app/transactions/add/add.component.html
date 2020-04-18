@@ -1,1 +1,37 @@
 <h1>Add working</h1>
+
+<p>Add new transaction below:</p>
+
+<form>
+
+	<table>
+		<tbody>
+			<tr>
+				<td><label for="date">Date</label></td>
+				<td><input id="date" type="date"></td>
+			</tr>
+
+			<tr>
+				<td><label for="typeDropdown">Trans Type</label></td>
+				<td>
+					<select name="typeDropdown" id="typeDropdown">
+            <option value="01_income">Income</option>
+            <option value="02_expense">Expense</option>
+            <option value="03_investment">Investment</option>
+          </select>
+				</td>
+			</tr>
+
+      <tr>
+				<td><label for="typeDropdown">Trans Type (sub)</label></td>
+				<td>
+					<select name="typeDropdown" id="typeDropdown">
+            <option value="01_inc_salary">Salary -- Income</option>
+            <option value="02_exp_dairy">Dairy -- Expense</option>
+            <option value="03_exp_groceries">Groceries -- Expense</option>
+          </select>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
